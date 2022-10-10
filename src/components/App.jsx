@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import PokemonList from "./PokemonList";
 import PageHeader from "./PageHeader";
+import Databases from "./Databases"
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -51,7 +52,11 @@ function App() {
   return (
     <>
       <PageHeader />
-      <PokemonList pokemon={pokemon} />
+      <div className="flex  ">
+        <Databases  />
+        <PokemonList pokemon={pokemon} />
+      </div>
+
       <div className="flex justify-center items-center p-8">
         <button 
         className=" p-2 rounded-md border-none bg-lime-700 text-white hover:bg-lime-900" 
