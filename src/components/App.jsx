@@ -46,17 +46,15 @@ function App() {
     setCurrentPoke(currentPoke + 1)
   }
 
-  
-
   if (loading) return "Loading...";
 
   return (
     <>
-      <div className="grid grid-cols-8">
-        <div className="col-span-9">
+      <div className="grid grid-cols-8 md:grid-cols-1">
+        <div className="col-span-9 md:hidden">
           <PageHeader/>
         </div>
-        <div className="col-span-1 w-100 bg-lime-700">
+        <div className="col-span-1 w-100 bg-lime-700 md:hidden">
           <Databases  />
         </div>
         <div className="col-span-6">
@@ -68,7 +66,7 @@ function App() {
           </button>
       </div>
         </div>
-        <div className="col-span-1 w-100 bg-lime-700">
+        <div className="col-span-1 w-100 bg-lime-700 md:hidden">
           <PokémonOfTheWeek />
         </div>
       </div>
