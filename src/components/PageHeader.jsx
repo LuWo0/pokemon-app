@@ -4,7 +4,7 @@ const PageHeader = () => {
     return (
         <>
             <header className="border-y-8 rounded-md border-lime-500">
-                <div  className=" bg-poke-banner bg-cover h-40 max-w-full bg-no-repeat"></div>
+                <div  className="bg-[url('../assets/images/poke-banner.webp')] bg-cover h-40 max-w-full bg-no-repeat"></div>
             </header>
             <nav className="bg-lime-700 flex justify-between">
                 <ul className="flex gap-2 m-1 pl-4 leading-5">
