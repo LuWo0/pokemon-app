@@ -131,7 +131,7 @@ const Databases = () => {
                             </nav>
                         </li>
                         <li>
-                            <h1 className="bg-lime-700 font-bold text-center px-8 py-2 border-1 bg-gradient-to-t from-lime-700 to-lime-500 border-slate-700">Pikachu Shorts</h1>
+                            <h1 className="bg-lime-700 font-bold text-center px-8 py-2 border-y-2 bg-gradient-to-t from-lime-700 to-lime-500 border-slate-700">Pikachu Shorts</h1>
                             <nav className="bg-lime-700">
                                 <ul className="text-xs py-1">
                                     <li>Pikachu's Summer Vacation</li>

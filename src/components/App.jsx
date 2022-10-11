@@ -3,6 +3,7 @@ import axios from "axios";
 import PokemonList from "./PokemonList";
 import PageHeader from "./PageHeader";
 import Databases from "./Databases"
+import PokémonOfTheWeek from "./PokémonOfTheWeek";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -52,9 +53,10 @@ function App() {
   return (
     <>
       <PageHeader />
-      <div className="flex  ">
+      <div className="flex ">
         <Databases  />
         <PokemonList pokemon={pokemon} />
+        <PokémonOfTheWeek />
       </div>
 
       <div className="flex justify-center items-center p-8">

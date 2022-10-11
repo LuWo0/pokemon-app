@@ -67,7 +67,7 @@ const PokemonList = ({ pokemon }) => {
         <tbody>
           {pokemon.slice(1).map((p) => (
             <tr
-              className="bg-stone-700 border-none border-solid text-white"
+              className="bg-stone-700 border-solid text-white"
               key={p.name}
             >
               <td className="text-center border-stone-600 border-2">#{p.id}</td>
