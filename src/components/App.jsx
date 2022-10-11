@@ -52,20 +52,27 @@ function App() {
 
   return (
     <>
-      <PageHeader />
-      <div className="flex ">
-        <Databases  />
-        <PokemonList pokemon={pokemon} />
-        <PokémonOfTheWeek />
+      <div className="grid grid-cols-8">
+        <div className="col-span-9">
+          <PageHeader/>
+        </div>
+        <div className="col-span-1 w-100 bg-lime-700">
+          <Databases  />
+        </div>
+        <div className="col-span-6">
+          <PokemonList pokemon={pokemon} />
+          <div className="flex justify-center items-center p-8">
+          <button 
+          className=" p-2 rounded-md border-none bg-lime-700 text-white hover:bg-lime-900" 
+          onClick={getNextPokemon}>Next
+          </button>
       </div>
-
-      <div className="flex justify-center items-center p-8">
-        <button 
-        className=" p-2 rounded-md border-none bg-lime-700 text-white hover:bg-lime-900" 
-        onClick={getNextPokemon}>Next
-        </button>
+        </div>
+        <div className="col-span-1 w-100 bg-lime-700">
+          <PokémonOfTheWeek />
+        </div>
       </div>
-      {/* <button onClick={getAllPokemon}>Load all</button> */}
+      
     </>
   );
 }

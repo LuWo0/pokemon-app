@@ -2,7 +2,7 @@ const Databases = () => {
 
     return (
         <>
-            <div className="flex flex-col">
+            <div className="flex flex-col h-max">
                 <nav>
                     <ul>
                         <li>
