@@ -1,5 +1,5 @@
 const PokemonList = ({ pokemon }) => {
-  console.log(pokemon);
+  
   return (
     <div className="flex justify-center items-center">
       <table className="table-auto w-screen">
