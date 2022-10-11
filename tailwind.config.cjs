@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "poke-banner": "url('./assets/poke-banner.webp')",
+        "poke-banner": "url('./src/assets/images/poke-banner.webp')",
       }
     },
   },
